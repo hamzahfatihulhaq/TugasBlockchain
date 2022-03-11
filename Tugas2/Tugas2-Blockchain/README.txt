@@ -1,5 +1,5 @@
 =================================================================================================
-SCRIPT TUGAS2 TERDAPAT PADA DIRECTORIES 'CONTRACTS'
+SCRIPT TUGAS2 TERDAPAT PADA DIRECTORIES 'contracts'
 =================================================================================================
 
 REMIX EXAMPLE PROJECT

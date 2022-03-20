@@ -1,0 +1,15 @@
+contract RPuzzle {
+    Ripemd160 rhash;
+
+    // extract r from DER-encoded signature
+    static function extractRFromSig(Sig sig) : bytes {
+        int rlen = unpack(sig[3 : 4]);
+        return sig[4 : 4 + rlen];
+    }
+
+    public function unlock(Sig sig, PubKey pubKey, Sig sigr) {
+        require(this.rhash == hash160(extractRFromSig(sigr)));
+        require(checkSig(sigr, pubKey));
+        require(checkSig(sig, pubKey));
+    }
+}

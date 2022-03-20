@@ -1,0 +1,66 @@
+{
+    "version": 8,
+    "compilerVersion": "1.9.1+commit.aebe0f4",
+    "contract": "P2PKH",
+    "md5": "84c38d8d70e5de0893ad668b50b28d0c",
+    "structs": [],
+    "library": [],
+    "alias": [
+        {
+            "name": "PubKeyHash",
+            "type": "Ripemd160"
+        }
+    ],
+    "abi": [
+        {
+            "type": "function",
+            "name": "unlock",
+            "index": 0,
+            "params": [
+                {
+                    "name": "sig",
+                    "type": "Sig"
+                },
+                {
+                    "name": "pubKey",
+                    "type": "PubKey"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "pubKeyHash",
+                    "type": "Ripemd160"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///d:/FILE-HAMZAH/Tugas_kuliah/Blockchain/Tugas3/PaytoPublicKeyHash.scrypt",
+    "asm": "$pubKeyHash OP_1 OP_PICK OP_HASH160 OP_1 OP_PICK OP_EQUAL OP_VERIFY OP_2 OP_PICK OP_2 OP_PICK OP_CHECKSIG OP_NIP OP_NIP OP_NIP",
+    "hex": "<pubKeyHash>5179a95179876952795279ac777777",
+    "sources": [
+        "d:\\FILE-HAMZAH\\Tugas_kuliah\\Blockchain\\Tugas3\\PaytoPublicKeyHash.scrypt"
+    ],
+    "sourceMap": [
+        "0:2:5:2:25",
+        "0:5:25:5:31",
+        "0:5:25:5:31",
+        "0:5:17:5:32",
+        "0:5:36:5:51",
+        "0:5:36:5:51",
+        "0:5:17:5:51",
+        "0:5:9:5:53",
+        "0:6:26:6:29",
+        "0:6:26:6:29",
+        "0:6:31:6:37",
+        "0:6:31:6:37",
+        "0:6:17:6:38",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1"
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "version": 8,
+    "compilerVersion": "1.9.1+commit.aebe0f4",
+    "contract": "RabinSignature",
+    "md5": "cf1e0c1ffb0e89ce1c34a3a4a316a271",
+    "structs": [],
+    "library": [],
+    "alias": [
+        {
+            "name": "PubKeyHash",
+            "type": "Ripemd160"
+        }
+    ],
+    "abi": [
+        {
+            "type": "function",
+            "name": "verifySig",
+            "index": 0,
+            "params": [
+                {
+                    "name": "sig",
+                    "type": "int"
+                },
+                {
+                    "name": "msg",
+                    "type": "bytes"
+                },
+                {
+                    "name": "padding",
+                    "type": "bytes"
+                },
+                {
+                    "name": "n",
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": []
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///d:/FILE-HAMZAH/Tugas_kuliah/Blockchain/Tugas3/rabinSignature.scrypt",
+    "asm": "OP_2 OP_PICK OP_2 OP_PICK OP_CAT OP_NOP OP_0 OP_PICK OP_SHA256 OP_0 OP_PICK OP_SIZE OP_NIP OP_2 OP_DIV OP_1 OP_PICK OP_1 OP_PICK OP_SPLIT OP_DROP OP_SHA256 OP_2 OP_PICK OP_2 OP_PICK OP_SPLIT OP_NIP OP_SHA256 OP_CAT OP_1 OP_ROLL OP_DROP OP_1 OP_ROLL OP_DROP OP_1 OP_ROLL OP_DROP OP_NOP OP_NOP OP_0 OP_PICK 00 OP_CAT OP_BIN2NUM OP_1 OP_ROLL OP_DROP OP_NOP OP_4 OP_PICK OP_5 OP_PICK OP_MUL OP_2 OP_PICK OP_MOD OP_1 OP_PICK OP_3 OP_PICK OP_MOD OP_NUMEQUAL OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP",
+    "hex": "527952797e610079a8007982775296517951797f75a8527952797f77a87e517a75517a75517a756161007901007e81517a7561547955799552799751795379979c7777777777",
+    "sources": [
+        "d:\\FILE-HAMZAH\\Tugas_kuliah\\Blockchain\\Tugas3\\rabinSignature.scrypt"
+    ],
+    "sourceMap": [
+        "0:3:47:3:50",
+        "0:3:47:3:50",
+        "0:3:53:3:60",
+        "0:3:53:3:60",
+        "0:3:47:3:60",
+        "0:3:37:3:61#RabinSignature.hash:0",
+        "0:9:27:9:28",
+        "0:9:27:9:28",
+        "0:9:20:9:29",
+        "0:10:23:10:25",
+        "0:10:23:10:25",
+        "0:10:19:10:26",
+        "0:10:19:10:26",
+        "0:10:29:10:30",
+        "0:10:19:10:30",
+        "0:11:23:11:25",
+        "0:11:23:11:25",
+        "0:11:27:11:30",
+        "0:11:27:11:30",
+        "0:11:23:11:31",
+        "0:11:23:11:31",
+        "0:11:16:11:32",
+        "0:11:42:11:44",
+        "0:11:42:11:44",
+        "0:11:45:11:48",
+        "0:11:45:11:48",
+        "0:11:42:11:50",
+        "0:11:42:11:50",
+        "0:11:35:11:51",
+        "0:11:16:11:51",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "0:3:37:3:61#RabinSignature.hash:1",
+        "0:3:17:3:62#RabinSignature.fromLEUnsigned:0",
+        "0:16:23:16:24",
+        "0:16:23:16:24",
+        "0:16:27:16:32",
+        "0:16:23:16:32",
+        "0:16:16:16:33",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "0:3:17:3:62#RabinSignature.fromLEUnsigned:1",
+        "0:4:18:4:21",
+        "0:4:18:4:21",
+        "0:4:24:4:27",
+        "0:4:24:4:27",
+        "0:4:18:4:27",
+        "0:4:31:4:32",
+        "0:4:31:4:32",
+        "0:4:17:4:32",
+        "0:4:36:4:37",
+        "0:4:36:4:37",
+        "0:4:40:4:41",
+        "0:4:40:4:41",
+        "0:4:36:4:41",
+        "0:4:17:4:41",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1"
+    ]
+}

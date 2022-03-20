@@ -1,0 +1,65 @@
+{
+    "version": 8,
+    "compilerVersion": "1.9.1+commit.aebe0f4",
+    "contract": "Test",
+    "md5": "393b54190970cdd85285f124b10a3978",
+    "structs": [],
+    "library": [],
+    "alias": [
+        {
+            "name": "PubKeyHash",
+            "type": "Ripemd160"
+        }
+    ],
+    "abi": [
+        {
+            "type": "function",
+            "name": "equal",
+            "index": 0,
+            "params": [
+                {
+                    "name": "y",
+                    "type": "int"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "x",
+                    "type": "int"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///d:/FILE-HAMZAH/Tugas_kuliah/Blockchain/Tugas3/aSimpleSmallContract.scrypt",
+    "asm": "OP_0 $x OP_NOP OP_0 OP_PICK OP_2 OP_ROLL OP_DROP OP_1 OP_ROLL OP_DROP OP_NOP OP_1 OP_PICK OP_1 OP_PICK OP_NUMEQUAL OP_NIP OP_NIP",
+    "hex": "00<x>610079527a75517a7561517951799c7777",
+    "sources": [
+        "d:\\FILE-HAMZAH\\Tugas_kuliah\\Blockchain\\Tugas3\\aSimpleSmallContract.scrypt"
+    ],
+    "sourceMap": [
+        "0:3:5:3:10",
+        "0:5:17:5:22",
+        "-1:1:1:1:1#Test.constructor:0",
+        "0:6:18:6:19",
+        "0:6:18:6:19",
+        "0:6:9:6:15",
+        "0:6:9:6:15",
+        "0:6:9:6:15",
+        "0:6:9:6:15",
+        "0:6:9:6:15",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1#Test.constructor:1",
+        "0:10:17:10:18",
+        "0:10:17:10:18",
+        "0:10:22:10:28",
+        "0:10:22:10:28",
+        "0:10:17:10:28",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1"
+    ]
+}

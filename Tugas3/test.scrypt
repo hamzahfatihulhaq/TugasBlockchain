@@ -1,0 +1,6 @@
+
+contract Demo{
+    public function main(int x){
+        require(x == 0);
+    }
+}

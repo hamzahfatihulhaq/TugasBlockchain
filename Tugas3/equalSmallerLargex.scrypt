@@ -1,0 +1,13 @@
+contract Test{
+    int x;
+
+    public function equal(int y){
+        require(y == this.x);
+    }
+    public function smaller(int y){
+        require(y < this.x);
+    }
+    public function large(int y){
+        require(y > this.x);
+    }
+}

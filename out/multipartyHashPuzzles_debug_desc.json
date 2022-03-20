@@ -1,0 +1,91 @@
+{
+    "version": 8,
+    "compilerVersion": "1.9.1+commit.aebe0f4",
+    "contract": "MultiPartyHashPuzzles",
+    "md5": "7178060884a41c1c1a5cfe49d06797ca",
+    "structs": [],
+    "library": [],
+    "alias": [
+        {
+            "name": "PubKeyHash",
+            "type": "Ripemd160"
+        }
+    ],
+    "abi": [
+        {
+            "type": "function",
+            "name": "unlock",
+            "index": 0,
+            "params": [
+                {
+                    "name": "preimage1",
+                    "type": "bytes"
+                },
+                {
+                    "name": "preimage2",
+                    "type": "bytes"
+                },
+                {
+                    "name": "preimage3",
+                    "type": "bytes"
+                }
+            ]
+        },
+        {
+            "type": "constructor",
+            "params": [
+                {
+                    "name": "hash1",
+                    "type": "Sha256"
+                },
+                {
+                    "name": "hash2",
+                    "type": "Sha256"
+                },
+                {
+                    "name": "hash3",
+                    "type": "Sha256"
+                }
+            ]
+        }
+    ],
+    "stateProps": [],
+    "buildType": "debug",
+    "file": "file:///d:/FILE-HAMZAH/Tugas_kuliah/Blockchain/Tugas3/multipartyHashPuzzles.scrypt",
+    "asm": "$hash1 $hash2 $hash3 OP_5 OP_PICK OP_SHA256 OP_3 OP_PICK OP_EQUAL OP_VERIFY OP_4 OP_PICK OP_SHA256 OP_2 OP_PICK OP_EQUAL OP_VERIFY OP_3 OP_PICK OP_SHA256 OP_1 OP_PICK OP_EQUAL OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP",
+    "hex": "<hash1><hash2><hash3>5579a8537987695479a8527987695379a8517987777777777777",
+    "sources": [
+        "d:\\FILE-HAMZAH\\Tugas_kuliah\\Blockchain\\Tugas3\\multipartyHashPuzzles.scrypt"
+    ],
+    "sourceMap": [
+        "0:2:5:2:17",
+        "0:3:5:3:17",
+        "0:4:5:4:17",
+        "0:10:24:10:33",
+        "0:10:24:10:33",
+        "0:10:17:10:34",
+        "0:10:38:10:48",
+        "0:10:38:10:48",
+        "0:10:17:10:48",
+        "0:10:9:10:50",
+        "0:11:24:11:33",
+        "0:11:24:11:33",
+        "0:11:17:11:34",
+        "0:11:38:11:48",
+        "0:11:38:11:48",
+        "0:11:17:11:48",
+        "0:11:9:11:50",
+        "0:12:24:12:33",
+        "0:12:24:12:33",
+        "0:12:17:12:34",
+        "0:12:38:12:48",
+        "0:12:38:12:48",
+        "0:12:17:12:48",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1",
+        "-1:1:1:1:1"
+    ]
+}

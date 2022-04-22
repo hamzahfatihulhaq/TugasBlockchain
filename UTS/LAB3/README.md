@@ -2,7 +2,7 @@
 Nama    : Hamzah Fatihulhaq <br />
 NIM     : 1103192193 <br />
 
-File **Pengerjaan** : .\s06-eventtrigger<br />
+File **Pengerjaan** : <br />
     <ul> 
         <li>.\s06-eventtrigger </li> <br />
         <li>.\LAB-3_Supply_Chain\UTS </li> <br />

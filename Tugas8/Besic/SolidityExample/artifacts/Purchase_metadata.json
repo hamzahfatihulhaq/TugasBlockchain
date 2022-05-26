@@ -1,0 +1,210 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "InvalidState",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "OnlyBuyer",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "OnlySeller",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "ValueNotEven",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "Aborted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "ItemReceived",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "PurchaseConfirmed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "SellerRefunded",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "abort",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyer",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "confirmPurchase",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "confirmReceived",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "refundSeller",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "seller",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "state",
+				"outputs": [
+					{
+						"internalType": "enum Purchase.State",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "value",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"errors": {
+				"InvalidState()": [
+					{
+						"notice": "Fungsi tidak dapat dipanggil pada kondisi saat ini."
+					}
+				],
+				"OnlyBuyer()": [
+					{
+						"notice": "Hanya pembeli yang dapat memanggil fungsi ini."
+					}
+				],
+				"OnlySeller()": [
+					{
+						"notice": "Hanya penjual yang dapat memanggil fungsi ini."
+					}
+				],
+				"ValueNotEven()": [
+					{
+						"notice": "Nilai yang diberikan harus genap."
+					}
+				]
+			},
+			"kind": "user",
+			"methods": {
+				"abort()": {
+					"notice": "Batalkan pembelian dan dapatkan kembali eter. Hanya dapat dipanggil oleh penjual sebelum kontrak dikunci."
+				},
+				"confirmPurchase()": {
+					"notice": "Konfirmasi pembelian sebagai pembeli. Transaksi harus menyertakan `2 * nilai` eter. Eter akan dikunci sampai confirmReceived dipanggil."
+				},
+				"confirmReceived()": {
+					"notice": "Konfirmasikan bahwa Anda (pembeli) telah menerima barang tersebut. Ini akan melepaskan eter yang terkunci."
+				},
+				"refundSeller()": {
+					"notice": "Fungsi ini mengembalikan uang penjual, mis. membayar kembali dana yang terkunci dari penjual."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Besic/SolidityExample/safeRemotePurchase.sol": "Purchase"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Besic/SolidityExample/safeRemotePurchase.sol": {
+			"keccak256": "0xc322ee0889586eb146e17fe60de6bce9d59b3a7dd6f7281c00e0ab69ac9c7917",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bed74d38c67422f783ce217d55d32aae346f0402f68cf02c421ebf05fb6cbad6",
+				"dweb:/ipfs/QmTzCjeBxiavLuU3tNbBzAbDYfPHpBB9YsnrAC3e2qiJgs"
+			]
+		}
+	},
+	"version": 1
+}

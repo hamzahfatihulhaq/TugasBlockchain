@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nonce",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					}
+				],
+				"name": "claimPayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "shutdown",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"shutdown()": {
+					"notice": "hancurkan kontrak dan dapatkan kembali dana sisa."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Besic/SolidityExample/creatingAndVerifyingSignatures.sol": "ReceiverPays"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Besic/SolidityExample/creatingAndVerifyingSignatures.sol": {
+			"keccak256": "0x9ed4d6815afb3253fdfe982a5f96c3bb062083eac5205a3c644a9614760e7fba",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d56baa46e16c0223e528f26786c74973aa62eec8e7030d9c693b5bcb61f17db7",
+				"dweb:/ipfs/QmZLdX3hAauZ4iYi3ZpAdpzrHqys337j1mk1mC4ZuKrcNP"
+			]
+		}
+	},
+	"version": 1
+}

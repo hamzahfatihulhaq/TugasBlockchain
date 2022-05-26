@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Besic/SolidityExample/modularContracts.sol": "Balances"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Besic/SolidityExample/modularContracts.sol": {
+			"keccak256": "0x88fa549ceba60282388038236d2b0ab885ac1bb0fd4356ca4e6419118e22e44a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://36cd4005e69f419f8f8c4d7e3a01d6a6cc735c0a0d2c04cfae265e809a4ee32d",
+				"dweb:/ipfs/QmcVsdf8JJpg8iPciUju6iecyiDnyXQStFx5SAWmL5uumv"
+			]
+		}
+	},
+	"version": 1
+}
